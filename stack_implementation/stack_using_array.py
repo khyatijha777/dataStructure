@@ -19,7 +19,7 @@ class stack:
             print("stack empty")
         else:
             t = self.s[self.top]
-            self.s.remove(self.top)
+            self.s.remove(self.s[self.top])
             self.top-=1
             return t
     def show(self):
@@ -34,5 +34,8 @@ if __name__ == "__main__":
     s.push(3)
     s.push(4)
     s.show()
+    s.pop()
+    s.show()
+    s.pop()
     s.pop()
     s.show()
